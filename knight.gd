@@ -4,7 +4,6 @@ extends Node2D
 
 var ground_y: float = 0.0
 
-# How far from the edges Knight is allowed to walk.
 var left_margin: float = 80.0
 var right_margin: float = 80.0
 
@@ -229,7 +228,6 @@ func choose_new_behavior() -> void:
 
 		movement_state = MovementState.WALKING
 
-		# Randomly change direction sometimes.
 		if randf() < 0.5:
 			direction *= -1.0
 
